@@ -1,17 +1,14 @@
-[project]
+[tool.poetry]
 name = "test-a"
-version = "1.0.0"
-description = "Add your description here"
+version = "0.1.0"
+description = ""
+authors = ["Ian Scott Knight <isk@alumni.stanford.edu>"]
 readme = "README.md"
-authors = [
-    { name = "Ian Scott Knight", email = "isk@alumni.stanford.edu" }
-]
-requires-python = ">=3.9"
-dependencies = []
 
-[project.scripts]
-test-a = "test_a:main"
+[tool.poetry.dependencies]
+python = "^3.11"
+
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
